@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Detailing & Tinting Service - Services</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+  
+    .navbar-brand img {
+      margin-right: 5px;
+    }
+
+    #services {
+      padding: 15px;
+    }
+
+    .card {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-img-top {
+      flex: 0 0 auto;
+      max-width: 50%;
+    }
+
+    .card-body {
+      flex: 0 1 auto;
+      height: 100%; /* Adjust the height to fill up the box */
+    }
+
+    .price-box {
+      background-color: #f8f9fa;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    .info-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .gallery-icon {
+      max-width: 30px;
+      height: auto;
+    }
+
+    .card-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery-caption {
+      margin-top: 10px;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/logo1.png" alt="Logo" width="60" height="60" class="d-inline-block align-top">
+      Elite Detailing & Tinting
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="detailing.html">Detailing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tinting.html">Tinting</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="experts.html">Experts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="booking.html">Book Now</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="display-4 text-center mb-5">Our Experts</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4 text-center">
+                <img class="card-img" src="assets/dude.jpg" alt="Service 1">
+                <div class="gallery-container">
+                  <a href="#" class="gallery-link" data-toggle="modal" data-target="#galleryModal1">
+                    <img src="assets/gallery.png" alt="View Gallery" class="gallery-icon">
+                  </a>
+                  <div class="gallery-caption">View Gallery</div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Richard</h5>
+                  <p class="card-text">Richard is a highly experienced and reputable auto care expert with decades of
+                    industry knowledge under his belt. Renowned for his exceptional skills and meticulous attention to
+                    detail, Richard has become a trusted name in the automotive community. Throughout his career, he has
+                    worked on a wide range of vehicles, from classic cars to modern luxury models, delivering outstanding
+                    results every time. With a strong focus on customer satisfaction, Richard has built a loyal clientele
+                    who appreciate his professionalism, expertise, and consistent delivery of top-notch auto care
+                    services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-4 text-center">
+                <img class="card-img" src="assets/dude2.jpg" alt="Service 2">
+                <div class="gallery-container">
+                  <a href="#" class="gallery-link" data-toggle="modal" data-target="#galleryModal2">
+                    <img src="assets/gallery.png" alt="View Gallery" class="gallery-icon">
+                  </a>
+                  <div class="gallery-caption">View Gallery</div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Kai</h5>
+                  <p class="card-text">Kai is a young and emerging auto care expert who brings a fresh and innovative
+                    approach to the industry. Despite being relatively new to the field, Kai possesses a keen eye for
+                    design and an innate sense of what's cool and trendy in the automotive world. He has a natural
+                    ability to transform ordinary vehicles into head-turning machines by incorporating stylish and unique
+                    modifications. Kai's passion for car aesthetics and his commitment to staying updated with the
+                    latest trends make her an excellent choice for car enthusiasts who want to add a touch of
+                    personality and individuality to their vehicles.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Modals -->
+  <div class="modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-labelledby="galleryModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModal1Label">Gallery - Richard</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Add your gallery images here -->
+          <img src="assets/dude1-gallery/tint.jpg" alt="Gallery Image 1" class="img-fluid">
+          <img src="assets/dude1-gallery/headlight.jpg" alt="Gallery Image 2" class="img-fluid">
+          <img src="assets/dude1-gallery/clean.webp" alt="Gallery Image 3" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-labelledby="galleryModal2Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="galleryModal2Label">Gallery - Kai</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Add your gallery images here -->
+          <img src="assets/dude2-gallery/tint.jpg" alt="Gallery Image 4" class="img-fluid">
+          <img src="assets/dude2-gallery/lights.jpg" alt="Gallery Image 5" class="img-fluid">
+          <img src="assets/dude2-gallery/Interior-Car-Cleaning.jpg" alt="Gallery Image 6" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
